@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e2;
+}
+
+.logo {
+    color: #0c0c5f;
+}
+
+.logo h2 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.menu {
+    width: 70%;
+    text-align: right;
+}
+
+.menu a{
+ color: #0f0f75;
+ font-size: 14px;
+ text-decoration: none;
+ margin-right: 20px;
+ 
+}
+
+.menu a:hover {
+    color: #2121e9;
+}
+
+.menu .btn-menu {
+    background-color: #2121e9;
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 8px;
+}
+
+.menu .btn-menu:hover {
+    background-color: #0f0f75;
+    color: white;
+}
+
+
+section.main {
+    background-image: url(geometric.jpg);
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_cta {
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.main_cta h2 {
+    color: #121288;
+    font-size: 32px;
+}
+
+.main_cta p {
+    color: #706f6f;
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.main_cta button {
+    background-color: #2121e9;
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 8px;
+    border:0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.diferenciais {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diferenciais-single {
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+
+}
+
+.diferenciais-single h3 {
+    color:#0c0c5f;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.diferenciais-single p {
+    color: #706f6f;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+section.about {
+    padding: 40px 0;
+}
+
+.text-about {
+    text-align:center;
+}
+
+.text-about h2 {
+    color:#0c0c5f;
+    text-transform: uppercase;
+}
+
+.text-about p {
+    color:#706f6f;
+    font-size: 14px;
+}
+
+.about-content {
+    padding: 30px 0;
+    display: flex;
+}
+
+.about-content p {
+    margin: 0 20px;
+}
+
+.btn-content {
+    background-color: white;
+    color:#2121e9;
+    border: 1px solid #2121e9;
+    padding: 10px;
+}
+
+section.conquistas {
+    background-color: #f1f1f3;
+    padding: 10px 0;
+    margin-bottom:20px;
+}
+
+
+.conquistas-single {
+    width: 23%;
+    padding: 10px 0;
+    margin-right: 2%;
+    text-align: center;
+    color: #0c0c5f;
+}
+
+.conquistas-single h3 {
+    font-size: 30px;
+}
+
+.menu-items {
+    position: absolute;
+    left: 0;
+    top:85px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: block;
+    opacity:0;
+    transition: 0.4s;
+}
+
+.menu-items.show {
+    opacity:1;
+}
+
+.menu-items.hidde {
+    opacity:0;
+}
+
+.menu-items a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+.video-img {
+    width: 46%;
+    margin-right: 4%;
+}
+
+.video-img img {
+    max-width: 100%;
+}
+
+.video-content {
+    width: 46%;
+}
+
+.video-content h2 {
+    color: #0c0c5f;
+    margin-bottom: 15px;
+}
+
+.video-content p {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #f1f1f3;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .diferenciais-single {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 20%;
+    }
+    .menu-mobile {
+        width: 80%;
+        display: block;
+        text-align: right;
+    }
+
+    .menu-mobile h4 {
+        cursor: pointer;
+        margin-top:8px;
+
+    }
+    .about-content p{
+        width: 100%;
+        margin: 20px;
+    }
+
+    .conquistas-single {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .video-img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .video-content {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
